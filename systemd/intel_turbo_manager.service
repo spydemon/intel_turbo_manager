@@ -1,0 +1,10 @@
+[Unit]
+Description=Manage Intel Turbo Boost
+
+[Service]
+Type=simple
+ExecStart=/opt/intel_turbo_manager/intel_turbo_manager.pl
+User=root
+
+[Install]
+WantedBy=multi-user.target

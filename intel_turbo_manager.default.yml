@@ -1,0 +1,12 @@
+# This is the default configuration file used by the intel_turbo.pl script.
+# Do not edit it, but create a new one named "intel_turbo.pl" with your modification instead.
+
+[control]
+
+# JSON path that identifies the location of the fan speed to monitor.
+# You can find it by running the `sensors -j` command.
+fan_path = dell_smm-virtual-0/fan1/fan1_input
+
+# Speen in RPM that defines the limit after which the turbo mode should be disabled.
+# When the speed of the fan goes down of the limit, the turbo mode is switched on again.
+fan_limit = 4500
